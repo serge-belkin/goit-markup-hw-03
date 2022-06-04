@@ -33,9 +33,10 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  color: var(--accent-color);
 }
 
-.studio-logo-head {color: var(--title-text-color);}
+.studio-logo .studio-logo-head {color: var(--title-text-color);}
 
 .link.current {color: var(--accent-color);}
 
@@ -119,8 +120,7 @@ body {
 
 /* Стили футера */
 
-footer > .studio-logo-footer,
-.studio-logo-footer:visited
+.studio-logo .studio-logo-footer
 {color: var(--tertiary-text-color);}
 
 footer {background-color: #2F303A;}
