@@ -25,9 +25,19 @@ body {
 
 .list-item {list-style-type: none;}
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #ECECEC;
+}
+
 /* Стили хедера */
 
 .studio-logo {
+margin-right: 93px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -42,10 +52,34 @@ body {
 
 .studio-logo-accent {color: var(--accent-color);}
 
+.main-nav{
+  display: flex;
+  align-items: center;
+}
+
 .nav-list{
+display: flex;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.nav-list .list-item:not(last-child),
+.contacts .list-item:not(last-child) {
+  margin-right: 50px;
+}
+
+.nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
 }
 
 .link:hover,
@@ -59,7 +93,19 @@ body {
 }
 .contact:visited {color: var(--primary-text-color);}
 
+.header-box {
+  display: flex;
+    align-items: center;
+}
+
+
+
 /* Стили мейна главной страницы */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .hero-title {
   font-weight: 900;
@@ -169,3 +215,20 @@ background-color: var(--accent-color);}
   color: var(--primary-text-color);
 }
 
+.buttons {
+  text-align: inherit;
+}
+
+.card-set {
+  margin: 0;
+  padding: 0;
+  display: flex;
+flex-wrap: wrap;
+  margin-top: -30px;
+    margin-left: -30px;
+}
+.card-set > .list-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
