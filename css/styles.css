@@ -42,10 +42,11 @@ padding: 0;}
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 1px solid #ECECEC;
 }
 
 /* Стили хедера */
+
+
 
 .studio-logo {
   font-family: 'Raleway', sans-serif;
@@ -54,6 +55,10 @@ padding: 0;}
   line-height: 1.19;
   text-decoration: none;
   color: var(--accent-color);
+}
+
+header {
+      border-bottom: 1px solid #ECECEC;
 }
 
 .header-box .studio-logo {
@@ -112,7 +117,6 @@ display: flex;
   display: flex;
     align-items: center;
 }
-
 
 
 /* Стили мейна главной страницы */
@@ -185,6 +189,37 @@ border: none;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.section.no-padding {
+  padding-top: 0;
+}
+
+.what-we-do-list {
+  display: flex;
+}
+
+.what-we-do-list .list-item + .list-item {
+  margin-left: 30px;
+}
+
+.our-team {
+  background-color: #F5F4FA;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list .list-item + .list-item {
+margin-left: 30px;
+}
+
+.team-text-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #fff;
 }
 
 .team-title {
@@ -192,6 +227,11 @@ border: none;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.team-list img {
+  display: block;
 }
 
 .team-text {
